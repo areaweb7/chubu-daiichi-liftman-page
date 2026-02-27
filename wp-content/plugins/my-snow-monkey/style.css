@@ -1,0 +1,3078 @@
+@charset "UTF-8";
+
+
+body{
+	font-family: 'Roboto', YakuHanJP_Noto, 'Noto Sans JP', "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic Pro", "Meiryo", sans-serif;
+	--wp--preset--color--sm-text: #000;
+}
+
+.pc{
+	display: none !important;
+}
+
+.sp{
+	display: block !important;
+}
+
+@font-face {
+	font-family: 'keni8-icons';
+	src: url('https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/fonts/keni8-icons.eot?ds3ffr');
+	src: url('https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/fonts/keni8-icons.eot?ds3ffr#iefix') format('embedded-opentype'),
+		url('https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/fonts/keni8-icons.ttf?ds3ffr') format('truetype'),
+		url('https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/fonts/keni8-icons.woff?ds3ffr') format('woff'),
+		url('https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/fonts/keni8-icons.svg?ds3ffr#keni8-icons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*アイコン*/
+.icon_point,
+.icon_caution,
+.icon_blank,
+.icon_arrow_up,
+.icon_arrow_right,
+.icon_arrow_down,
+.icon_arrow_left,
+.icon_download,
+.icon_pdf,
+.icon_zip,
+.icon_mail,
+.icon_mail_white,
+.icon_cart,
+.icon_search,
+.icon_home,
+.icon_folder,
+.icon_time,
+.icon_calendar,
+.icon_building,
+.icon_map,
+.icon_new,
+.icon_beginner,
+.icon_share,
+.icon_tel{
+	line-height: 1;
+	font-size: 20px;
+}
+
+.icon_point::before,
+.icon_caution::before,
+.icon_blank::before,
+.icon_arrow_up::before,
+.icon_arrow_right::before,
+.icon_arrow_down::before,
+.icon_arrow_left::before,
+.icon_download::before,
+.icon_pdf::before,
+.icon_zip::before,
+.icon_mail::before,
+.icon_mail_white::before,
+.icon_cart::before,
+.icon_search::before,
+.icon_home::before,
+.icon_folder::before,
+.icon_time::before,
+.icon_calendar::before,
+.icon_building::before,
+.icon_map::before,
+.icon_new::before,
+.icon_beginner::before,
+.icon_share::before,
+.icon_tel::before{
+	font-family: 'keni8-icons' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: inherit;
+}
+
+.icon_point::before{ content: "\e91a"; }
+.icon_caution::before{ content: "\e90d"; }
+.icon_blank::before{ content: "\e909"; }
+.icon_arrow_up::before{ content: "\e907"; }
+.icon_arrow_right::before{ content: "\e902"; }
+.icon_arrow_down::before{ content: "\e900"; }
+.icon_arrow_left::before{ content: "\e901"; }
+.icon_download::before{ content: "\e90e"; }
+.icon_pdf::before{ content: "\e919"; }
+.icon_zip::before{ content: "\e922"; }
+.icon_mail::before{ content: "\e914"; }
+.icon_cart::before{ content: "\e90c"; }
+.icon_search::before{ content: "\e91d"; }
+.icon_home::before{ content: "\e910"; }
+.icon_folder::before{ content: "\e90f"; }
+.icon_time::before{ content: "\e921";}
+.icon_calendar::before{ content: "\e90b"; }
+.icon_building::before{ content: "\e90a"; }
+.icon_map::before{ content: "\e915"; }
+.icon_new::before{ content: "\e916"; }
+.icon_beginner::before{ content: "\e908"; }
+.icon_share::before{ content: "\e91e"; }
+.icon_tel::before{ content: "\e920"; }
+
+.icon_arrow_s_up,
+.icon_arrow_s_right,
+.icon_arrow_s_down,
+.icon_arrow_s_left{
+	line-height: 1;
+	font-size: 12px;
+}
+
+.icon_arrow_s_up::before,
+.icon_arrow_s_right::before,
+.icon_arrow_s_down::before,
+.icon_arrow_s_left::before{
+	font-family: 'keni8-icons' !important;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: inherit;
+}
+
+.icon_arrow_s_up:before{ content: "\e906"; }
+.icon_arrow_s_right:before{ content: "\e905"; }
+.icon_arrow_s_down:before{ content: "\e903"; }
+.icon_arrow_s_left:before{ content: "\e904"; }
+
+
+
+.l-header--sticky-sm{
+	box-shadow: none;
+}
+
+.l-header__content{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.l-header .c-container, .c-fluid-container{
+	padding: 0 15px;
+}
+
+.c-site-branding__title{
+	line-height: 1;
+}
+
+.c-site-branding__title .custom-logo{
+	width: 100%;
+	max-width: 100px;
+}
+
+.c-hamburger-btn{
+	color: #0b318f;
+}
+
+.c-hamburger-btn__bars{
+	height: 20px;
+	width: 30px;
+}
+
+.l-header .c-hamburger-btn__bar{
+	background-color: #0b318f;
+}
+
+.c-hamburger-btn__bar:nth-of-type(2){
+	top: 8px;
+}
+
+.c-hamburger-btn__bar:nth-of-type(3){
+	top: 16px;
+}
+
+.p-header-content--sm{
+	padding-top: 0;
+}
+
+.p-header-content .c-container{
+	padding: 0 15px;
+}
+
+.p-header-content--sm {
+    padding-top: 0;
+    position: fixed;
+    z-index: 1200;
+    top: 0;
+    right: 45px;
+    width: 100%;
+    max-width: 200px;
+}
+
+.c-header-content .header-btn{
+	display: flex;
+}
+
+.c-header-content .header-btn .job-description-btn,
+.c-header-content .header-btn .entry-btn{
+	width: 50%;
+}
+
+.c-header-content .header-btn .job-description-btn a,
+.c-header-content .header-btn .entry-btn a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 55px 10px 15px;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.5;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	font-feature-settings: "palt";
+    letter-spacing: 0.03em;
+	transition: 0.3s;
+}
+
+.c-header-content .header-btn .job-description-btn a{
+	background: #0b318f;
+}
+
+.c-header-content .header-btn .entry-btn a{
+	background: #f6ab00;
+}
+
+.c-header-content .header-btn .job-description-btn a:hover,
+.c-header-content .header-btn .job-description-btn a:active,
+.c-header-content .header-btn .job-description-btn a:focus,
+.c-header-content .header-btn .entry-btn a:hover,
+.c-header-content .header-btn .entry-btn a:active,
+.c-header-content .header-btn .entry-btn a:focus{
+	filter: brightness(1.1);
+}
+
+.l-front-page-widget-area .c-section{
+	padding: 30px 0 25px;
+}
+
+.l-front-page-widget-area .c-section .c-container{
+	padding: 0 15px;
+}
+
+.l-front-page-widget-area .c-section .c-container .c-row>.c-row__col:not(:last-child){
+	margin-bottom: 0;
+}
+
+.l-front-page-widget-area .c-section .c-container .footer-company-info .company-logo{
+	max-width: 250px;
+	margin: 0 auto 20px;
+}
+
+.l-front-page-widget-area .c-section .c-container .footer-company-info p{
+	font-size: 15px;
+	line-height: 1.5;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.l-front-page-widget-area .c-section .c-container .footer-company-info .iso-img{
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.l-contents-bottom-widget-area{
+	padding: 30px 15px 25px;
+	margin-top: 0;
+}
+
+.l-contents-bottom-widget-area .footer-company-info .c-row>.c-row__col:not(:last-child){
+	margin-bottom: 0;
+}
+
+.l-contents-bottom-widget-area .footer-company-info .company-logo{
+	max-width: 250px;
+	margin: 0 auto 20px;
+}
+
+.l-contents-bottom-widget-area .footer-company-info p{
+	font-size: 15px;
+	line-height: 1.5;
+	text-align: center;
+	margin: 0 0 10px;
+}
+
+.l-contents-bottom-widget-area .footer-company-info .iso-img{
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+.l-footer{
+	background: #0b318f;
+	border-top: none;
+	padding-top: 15px;
+}
+
+.l-footer .l-footer-widget-area{
+	background: none;
+	padding: 0;
+}
+
+.l-footer .l-footer-widget-area .c-container{
+	padding: 0 15px;
+}
+
+.c-sub-nav .c-navbar{
+	gap: 0 30px;
+	justify-content: center;
+}
+
+.c-sub-nav .c-navbar__item>a{
+	font-size: 14px;
+	color: #fff;
+}
+
+.l-footer--footer-1 .l-footer__footer{
+	background: #0b318f;
+	padding: 10px 0 20px;
+}
+
+.l-footer--footer-1 .c-copyright{
+	color: #fff;
+	text-align: center;
+}
+
+.c-copyright--inverse{
+	background: none;
+}
+
+.c-page-top{
+	background: #000;
+}
+
+.smb-section{
+	--smb-section--color: #000;
+}
+
+.c-section{
+	padding: 0;
+}
+
+.c-section .c-container{
+	padding: 0;
+}
+
+.smb-section .c-container{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.page .smb-section{
+	padding: 60px 0;
+	margin-top: 0 !important;
+}
+
+.page .my-breadcrumbs{
+	padding: 10px 0 0;
+}
+
+.page .smb-section h2{
+	font-size: 28px;
+	line-height: 1.4;
+	background: none;
+	border-left: none;
+	padding: 0;
+	margin: 0 0 30px;
+	font-feature-settings: "palt";
+}
+
+.page .smb-section p{
+	font-size: 15px;
+	line-height: 1.8;
+}
+
+.page .smb-section figure{
+	margin-top: 0 !important;
+}
+
+
+/* hide reCAPTCHA v3 badge */
+.grecaptcha-badge { visibility: hidden; }
+
+
+
+/* TOPページ */
+
+.home .top-mv-sec{
+	padding: 20px 0 60px;
+	background: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/top/mv.png) center top 48.31vw no-repeat;
+	background-size: 95.17vw 60.14vw;
+}
+
+.home .top-mv-sec .main-catch{
+	max-width: 650px;
+	margin: 0 auto 45.89vw;
+}
+
+.home .is-layout-constrained>:not(:first-child){
+	margin-top: 0;
+}
+
+.home .top-mv-sec .message-box{
+	background: rgba(255,255,255,0.7);
+	padding: 30px 15px;
+	border: 3px solid #0b318f;
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+.home .top-mv-sec .message-box .message-img{
+	max-width: 200px;
+}
+
+.home .smb-section h2{
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 1.4;
+	background: none;
+	border-left: none;
+	padding: 0;
+	margin: 0 0 30px;
+	font-feature-settings: "palt";
+}
+
+.home .top-mv-sec .message-box h2{
+	font-size: 26px;
+	font-weight: 700;
+	margin: 0 0 20px;
+}
+
+.home .top-mv-sec .message-box p:nth-of-type(n+2){
+	margin-top: 15px;
+}
+
+.home .top-mv-sec .message-box .smb-buttons{
+	margin-top: 25px;
+}
+
+.home h2.top-sec-title{
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.home h2.top-sec-title::before,
+.home h2.top-sec-title::after {
+  background-color: #0b318f;
+  content: "";
+  height: 2px;
+  width: 40px;
+}
+
+.home h2.top-sec-title::before {
+  margin-right: 15px;
+}
+
+.home h2.top-sec-title::after {
+  margin-left: 15px;
+}
+
+.home .top-mv-sec h2.top-sec-title{
+	margin-top: 80px;
+}
+
+.home .top-mv-sec .know-conts .know-img{
+	max-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.home .top-mv-sec .know-conts h3{
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.3;
+	margin: 30px 0 20px;
+	padding: 0;
+	border-bottom: none;
+}
+
+.home .top-mv-sec .know-conts p{
+	line-height: 1.5;
+	margin: 0;
+}
+
+.home .staff-sec .staff-conts{
+	margin-top: 30px;
+}
+
+.home .staff-sec .staff-conts .spider__slide{
+	position: relative;
+}
+
+.home .staff-sec .staff-conts .syokusyu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #fff;
+	background: #00a0e9;
+	padding: 10px 15px;
+	margin: auto;
+	font-feature-settings: "palt";
+}
+
+.home .staff-sec .staff-conts .staff-text{
+	padding: 20px 20px 25px;
+}
+
+.home .staff-sec .staff-conts .staff-text p{
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.home .staff-sec .staff-conts .staff-text .staff-name{
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 10px 0 0;
+}
+
+.home .staff-sec .staff-conts .staff-text .staff-name .name{
+	font-size: 24px;
+}
+
+.home .staff-sec .staff-conts .staff-text .smb-buttons{
+	margin-top: 15px;
+}
+
+.home .staff-sec .new-employee-block{
+	margin: 50px 0 0;
+}
+
+.home .staff-sec .new-employee-block h3{
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 1.3;
+	padding: 0 0 10px;
+	border-bottom: none;
+	margin: 0 0 25px;
+	position: relative;
+}
+
+.home .staff-sec .new-employee-block h3::before{
+	position: absolute;
+    border-bottom: 2px solid #0b318f;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    content: '';
+}
+
+.home .staff-sec .new-employee-block .smb-buttons{
+	gap: 20px !important;
+}
+
+.home .job-description-sec .job-bnr-conts{
+	margin-top: 30px;
+}
+
+.home .job-description-sec .job-bnr-conts .job-bnr{
+	position: relative;
+}
+
+.home .job-description-sec .job-bnr-conts .job-bnr::after{
+	position: absolute;
+	content: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/top/click_icon.svg);
+	top: -15px;
+	left: -10px;
+	width: 60px;
+	height: 60px;
+	margin: auto;
+}
+
+.home .job-description-sec .job-bnr-conts .job-bnr a{
+	transition: 0.3s;
+}
+
+.home .job-description-sec .job-bnr-conts .job-bnr a:hover,
+.home .job-description-sec .job-bnr-conts .job-bnr a:active,
+.home .job-description-sec .job-bnr-conts .job-bnr a:focus{
+	filter: brightness(1.1);
+}
+
+.home .entry-info-sec h2{
+	font-weight: 700;
+}
+
+.home .img-slide{
+	margin-top: 0 !important;
+}
+
+.home .spider__arrow{
+	background: rgba(11,49,143,0.8);
+	border-radius: 50%;
+}
+
+.home .slider{
+	max-width: none !important;
+	margin-top: 0 !important;
+	padding: 0;
+}
+
+.home .slider .slider-item{
+	margin: 0 !important;
+}
+
+.home .slick-slide img{
+	display: inline;
+}
+
+
+
+/* 固定ページ共通 */
+
+.page .c-entry__header{
+	display: none !important;
+}
+
+.page .page-header{
+	height: 120px;
+	position: relative;
+}
+
+.page .page-header .page-title{
+	font-size: 30px;
+	line-height: 1.3;
+	text-align: center;
+	margin-bottom: 0 !important;
+	font-feature-settings: "palt";
+}
+
+.page .page-header .page-title .sub-title{
+	display: block;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.page .smb-section h2{
+	font-size: 28px;
+	line-height: 1.4;
+	background: none;
+	border-left: none;
+	padding: 0;
+	margin: 0 0 30px;
+	font-feature-settings: "palt";
+}
+
+.page .smb-section .smb-btn{
+	font-size: 15px;
+	font-weight: 500;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	width: 250px;
+}
+
+.page .entry-info-sec{
+	padding: 50px 0;
+}
+
+.page .entry-info-sec .entry-bnr-conts{
+	margin-top: 30px;
+}
+
+.page .entry-info-sec .entry-bnr-conts .smb-panels__item{
+	position: relative;
+}
+
+.page .entry-info-sec .entry-bnr-conts .smb-panels__item::after{
+	font-family: 'keni8-icons' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	position: absolute;
+	content: "\e905";
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+	right: 15px;
+	font-size: 20px;
+    color: #fff;
+}
+
+
+.page .entry-info-sec .entry-bnr-conts p{
+	font-size: 18px;
+	line-height: 1.3;
+	font-feature-settings: "palt";
+	margin-top: 0 !important;
+}
+
+.page .entry-info-sec .entry-bnr-conts .entry-title{
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+
+.page .entry-info-sec .entry-bnr-conts .entry-title.tel{
+	font-size: 29px;
+}
+
+.page .entry-info-sec .entry-bnr-conts .entry-title.tel .icon_tel{
+	font-size: 22px;
+	margin-right: 3px;
+}
+
+
+/* MESSAGEページ */
+
+.message .message-sec .message-conts .message-img{
+	max-width: 250px;
+}
+
+.message .message-sec .message-conts h2{
+	text-align: center;
+}
+
+.message .message-sec .solution-box{
+	margin-top: 60px;
+}
+
+.message .message-sec .solution-box h3{
+	text-align: center;
+	padding: 0;
+	border-bottom: none;
+}
+
+.message .message-sec .solution-box .solution-img figure:last-of-type{
+	margin-top: 15px !important;
+}
+
+.message .message-sec .smb-buttons{
+	margin-top: 50px;
+}
+
+
+/* FAMILYページ */
+
+.family .attempt-sec .attempt-conts h3{
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin: 20px 0 10px !important;
+}
+
+.family .faq-sec .faq-block:nth-of-type(n+2){
+	margin-top: 30px;
+}
+
+.family .faq-sec .faq-block p{
+	margin: 0 !important;
+}
+
+.family .faq-sec .faq-block .question{
+	font-size: 16px;
+	line-height: 1.4;
+	padding: 5px 0 5px 45px;
+	margin: 0 0 10px !important;
+	position: relative;
+}
+
+.family .faq-sec .faq-block .question::before{
+	position: absolute;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    margin: auto;
+	width: 35px;
+	height: 35px;
+    line-height: 1;
+	content: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/common/question.svg);
+}
+
+.family .faq-sec .faq-block .answer{
+	padding: 0 0 0 45px;
+	position: relative;
+}
+
+.family .faq-sec .faq-block .answer::before{
+	position: absolute;
+	top: 5px;
+    left: 0;
+    margin: auto;
+	width: 35px;
+	height: 35px;
+    line-height: 1;
+	content: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/common/answer.svg);
+}
+
+
+/* COMPANYページ */
+
+.company .company-sec .company-vision-title{
+	margin: -14.49vw 0 20px;
+}
+
+.company .company-sec .company-vision-subtitle{
+	line-height: 1.4;
+	margin: 0 0 30px;
+	padding: 0;
+	border-bottom: none;
+}
+
+.company .company-sec .company-vision-text p{
+	margin-bottom: 25px;
+}
+
+.company .company-sec .company-info-title{
+	margin-top: 80px;
+}
+
+.company .company-info-table table{
+	margin: 0 auto;
+}
+
+.company .company-info-table table th,
+.company .company-info-table table td{
+	display: block;
+	width: 100%;
+	font-size: 14px;
+	line-height: 1.6;
+}
+
+.company .company-info-table table th{
+	border-top: 1px solid #ddd !important;
+	padding: 0.8em 0 0.25em !important;
+	font-weight: 500;
+}
+
+.company .company-info-table table td{
+	padding: 0.25em 0 0.8em !important;
+}
+
+.company .company-info-table table tr:last-of-type td{
+	border-bottom: 1px solid #ddd !important;
+}
+
+
+/* VISITページ */
+
+.visit .visit-sec{
+	padding-bottom: 50px;
+	position: relative;
+}
+
+.visit .visit-sec::after{
+	position: absolute;
+	content: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/common/arrow.svg);
+	bottom: -30px;
+	left: 0;
+	right: 0;
+	width: 100px;
+	margin: auto;
+	z-index: 10;
+}
+
+.visit .visit-sec h2{
+	font-size: 24px;
+	line-height: 1.4;
+}
+
+.visit .visit-sec h3{
+	font-size: 20px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin-bottom: 10px;
+	font-feature-settings: "palt";
+}
+
+.visit .visit-sec .tyuui{
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.visit .visit-sec .jirei-conts h4{
+	font-size: 20px;
+	line-height: 1.4;
+	margin: 25px 0 15px;
+	font-feature-settings: "palt";
+}
+
+.visit .visit-sec .jirei-conts ul li{
+	font-size: 16px;
+	line-height: 1.4;
+	margin: 0;
+	font-feature-settings: "palt";
+}
+
+.visit .visit-sec .jirei-conts ul li:nth-child(n+2){
+	margin-top: 10px;
+}
+
+.visit .visit-sec .last-catch{
+	font-size: 18px;
+}
+
+
+/* STAFFページ */
+
+.staff .staff-index-sec .staff-conts .smb-panels__item{
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+}
+
+.staff .staff-index-sec .staff-conts .smb-panels__item__body{
+	padding: 0;
+	position: relative;
+}
+
+.staff .staff-index-sec .staff-conts .syokusyu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #fff;
+	background: #00a0e9;
+	padding: 10px 15px;
+	margin: auto;
+	font-feature-settings: "palt";
+}
+
+.staff .staff-index-sec .staff-conts .staff-text{
+	margin-top: 0;
+	padding: 20px;
+}
+
+.staff .staff-index-sec .staff-conts .staff-text p{
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.staff .staff-index-sec .staff-conts .staff-text .staff-name{
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 10px 0 0;
+}
+
+.staff .staff-index-sec .staff-conts .staff-text .staff-name .name{
+	font-size: 24px;
+}
+
+
+.staff-child .staff-mv.staff01{
+	height: 97.10vw;
+}
+
+.staff-child .staff-mv.staff02,
+.staff-child .staff-mv.staff03,
+.staff-child .staff-mv.staff05,
+.staff-child .staff-mv.staff06{
+	height: 95.17vw;
+}
+
+.staff-child .staff-mv.staff04{
+	height: 95.41vw;
+}
+
+.staff-child .staff-mv.staff07{
+	height: 94.20vw;
+}
+
+.staff-child .staff-mv.staff08{
+	height: 101.21vw;
+}
+
+.staff-child .staff-mv.staff09{
+	height: 102.17vw;
+}
+
+.staff-child .staff-mv.staff10{
+	height: 97.58vw;
+}
+
+.staff-child .faq-sec{
+	padding: 40px 0;
+}
+
+.staff-child .faq-sec figure img{
+	width: 100% !important;
+}
+
+.staff-child .faq-sec .faq dt{
+	font-size: 20px;
+	line-height: 1.4;
+	padding: 10px 0 10px 45px;
+	position: relative;
+	margin: 0 0 10px;
+	font-feature-settings: "palt";
+}
+
+.staff-child .faq-sec .faq dt::before{
+	position: absolute;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    margin: auto;
+	width: 35px;
+	height: 35px;
+    line-height: 1;
+	content: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/common/question.svg);
+}
+
+.staff-child .faq-sec .faq dd{
+	padding: 0 0 0 45px;
+	position: relative;
+}
+
+.staff-child .faq-sec .faq dd::before{
+	position: absolute;
+	top: 0;
+    left: 0;
+    margin: auto;
+	width: 35px;
+	height: 35px;
+    line-height: 1;
+	content: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/common/answer.svg);
+}
+
+.staff-child .faq-sec .faq dd .answer-text{
+	padding: 15px;
+	border-radius: 4px;
+	line-height: 1.6;
+}
+
+.staff-child .faq-sec01 .faq dd .answer-text{
+	background: #F5F3F2;
+}
+
+.staff-child .faq-sec02 .faq dd .answer-text{
+	background: #fff;
+}
+
+.staff-child .faq-sec02 .faq dd .answer-text .tyuui{
+	display: block;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.staff-child .faq-sec .question-text{
+	font-size: 20px;
+	line-height: 1.4;
+	padding: 10px 0 10px 45px;
+	position: relative;
+	margin: 0 0 10px;
+	font-feature-settings: "palt";
+}
+
+.staff-child .faq-sec .question-text::before{
+	position: absolute;
+	top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    margin: auto;
+	width: 35px;
+	height: 35px;
+    line-height: 1;
+	content: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/common/question.svg);
+}
+
+.staff-child .faq-sec .day-flow-box{
+	margin-top: 10px;
+	padding-top: 30px !important;
+	padding-bottom: 30px !important;
+}
+
+.staff-child .faq-sec .day-flow-box .day-flow{
+	list-style: none;
+	padding-left: 75px;
+	margin-top: 0 !important;
+	position: relative;
+}
+
+.staff-child .faq-sec .day-flow-box .day-flow::before{
+	background-color: #ddd;
+    content: "";
+    margin: 0 auto;
+    position: absolute;
+    left: 30px;
+    top: 10px;
+    height: 100%;
+    width: 1px;
+}
+
+.staff-child .faq-sec .day-flow-box .day-flow li{
+	position: relative;
+	margin: 0;
+}
+
+.staff-child .faq-sec .day-flow-box .day-flow li:nth-child(n+2){
+	margin-top: 30px;
+}
+
+.staff-child .faq-sec .day-flow-box .day-flow li .time{
+    position: absolute;
+    top: -3px;
+    left: -75px;
+    width: 60px;
+    margin: auto;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 1.3;
+	color: #00A0E9;
+	background: #F5F3F2;
+	padding: 6px 0;
+	text-align: center;
+}
+
+.staff-child .faq-sec .day-flow-box .day-flow li p{
+	line-height: 1.6;
+}
+
+.staff-child .faq-sec .day-flow-box .day-flow li p:nth-of-type(n+2){
+	margin-top: 10px;
+}
+
+.staff-child .faq-sec .day-flow-box .case-title{
+	font-size: 18px;
+	font-weight: 700;
+	line-height: 1.4;
+	text-align: center;
+	margin: 50px 0 20px;
+	font-feature-settings: "palt";
+}
+
+.staff-child .staff-sec{
+	padding: 50px 0;
+}
+
+.staff-child .staff-sec h2{
+	font-size: 24px;
+}
+
+.staff-child .staff-sec .staff-conts{
+	margin-top: 30px;
+}
+
+.staff-child .staff-sec .staff-conts .spider__slide{
+	position: relative;
+}
+
+.staff-child .staff-sec .staff-conts .syokusyu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 1.4;
+	color: #fff;
+	background: #00a0e9;
+	padding: 10px 15px;
+	margin: auto;
+	font-feature-settings: "palt";
+}
+
+.staff-child .staff-sec .staff-conts .staff-text{
+	margin-top: 0;
+	padding: 20px 20px 25px;
+}
+
+.staff-child .staff-sec .staff-conts .staff-text p{
+	font-weight: 500;
+	line-height: 1.5;
+}
+
+.staff-child .staff-sec .staff-conts .staff-text .staff-name{
+	font-weight: 400;
+	line-height: 1.4;
+	margin: 10px 0 0;
+}
+
+.staff-child .staff-sec .staff-conts .staff-text .staff-name .name{
+	font-size: 24px;
+}
+
+.staff-child .staff-sec .smb-buttons{
+	margin-top: 40px;
+}
+
+.staff-child .staff-sec .staff-conts .staff-text .smb-buttons{
+	margin-top: 15px;
+}
+
+.staff-child .spider__arrow{
+	background: rgba(11,49,143,0.8);
+	border-radius: 50%;
+}
+
+
+
+
+
+/* BUSINESSページ */
+
+.business .business-sec .business-conts:nth-of-type(n+2){
+	margin-top: 80px;
+}
+
+.business .business-sec .business-conts h2{
+	margin: 0 0 20px;
+}
+
+.business .business-sec .business-conts h3{
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin: 0 0 25px;
+}
+
+.business .business-sec .business-conts .tyuui{
+	font-size: 14px;
+}
+
+.business .business-sec .business-conts .smb-buttons{
+	margin-top: 30px;
+}
+
+
+/* JOB-DESCRIPTIONページ */
+
+.job-description .job-index-sec .job-index-conts .smb-panels__item{
+	box-shadow: 1px 1px 8px rgba(0,0,0,0.4);
+}
+
+.job-description .job-index-sec .job-index-conts .smb-panels__item__body{
+	padding: 0;
+}
+
+.job-description .job-index-sec .job-index-conts .job-text{
+	margin-top: 0 !important;
+	padding: 25px 20px 20px;
+}
+
+.job-description .job-index-sec .job-index-conts .job-text h3{
+	font-size: 24px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin: 0 0 15px;
+	font-feature-settings: "palt";
+}
+
+.job-description .job-index-sec .job-index-conts .job-text p{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.5;
+	font-feature-settings: "palt";
+}
+
+.job-description-child .job-description-sec .job-about-conts h3{
+	font-size: 24px;
+	line-height: 1.4;
+	text-align: center;
+	padding: 0;
+	border-bottom: none;
+	margin: 0 0 20px;
+	font-feature-settings: "palt";
+}
+
+.job-description-child .job-description-sec .job-about-conts h4{
+	font-size: 18px;
+	line-height: 1.4;
+	text-align: center;
+	margin: 0 0 15px;
+	font-feature-settings: "palt";
+}
+
+.job-description-child .job-description-sec .job-about-conts p:nth-of-type(n+2){
+	margin-top: 15px;
+}
+
+.job-description-child .job-description-sec .job-about-conts .gyoumu-list li{
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.job-description-child .job-description-sec .job-about-conts .gyoumu-list.is-style-sme-ordered-list-circle li:before{
+	color: #fff;
+	background-color: #00A0E9;
+	top: 2px;
+}
+
+.job-description-child .job-description-sec .job-about-conts .tyuui{
+	font-size: 14px;
+}
+
+.job-description-child .job-description-sec .person-box{
+	margin-top: 40px;
+}
+
+.job-description-child .job-description-sec .person-box h3{
+	font-size: 24px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	font-feature-settings: "palt";
+}
+
+.job-description-child .job-description-sec .person-box .person-block{
+	margin: 30px 0 0;
+}
+
+.job-description-child .job-description-sec .person-box .person-block h4{
+	font-size: 22px;
+	line-height: 1.4;
+	padding: 0 0 0 60px;
+	margin: 0 0 10px;
+	font-feature-settings: "palt";
+	position: relative;
+}
+
+.job-description-child .job-description-sec .person-box .person-block h4 .text-s{
+	display: block;
+	font-size: 18px;
+	margin-top: 5px;
+}
+
+.job-description-child .job-description-sec .person-box .person-block h4::before{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 45px;
+	width: 1px;
+	height: 100%;
+	background: #00A0E9;
+	margin: auto;
+}
+
+.job-description-child .job-description-sec .person-box .person-block:nth-of-type(1) h4{
+	background: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/job-description/num01.svg) -5px center no-repeat;
+	background-size: 40px 40px;
+}
+
+.job-description-child .job-description-sec .person-box .person-block:nth-of-type(2) h4{
+	background: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/job-description/num02.svg) -5px center no-repeat;
+	background-size: 40px 40px;
+}
+
+.job-description-child .job-description-sec .person-box .person-block:nth-of-type(3) h4{
+	background: url(https://cdy.co.jp/recruit/wp-content/plugins/my-snow-monkey/images/job-description/num03.svg) -5px center no-repeat;
+	background-size: 40px 40px;
+}
+
+.job-description-child .job-description-sec .job-description-title{
+	font-size: 24px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin: 60px 0 20px;
+}
+
+.job-description-child .job-description-sec .job-description-table table{
+	margin: 0 auto;
+}
+
+.job-description-child .job-description-sec .job-description-table table th,
+.job-description-child .job-description-sec .job-description-table table td{
+	display: block;
+	width: 100%;
+	font-size: 15px;
+	line-height: 1.6;
+	text-align: center !important;
+}
+
+.job-description-child .job-description-sec .job-description-table table th{
+	border-top: 1px solid #ddd !important;
+	padding: 0.5em 0 !important;
+	font-weight: 500;
+}
+
+.job-description-child .job-description-sec .job-description-table table td{
+	padding: 0.8em 0 !important;
+}
+
+.job-description-child .job-description-sec .job-description-table table tr:last-of-type td{
+	border-bottom: 1px solid #ddd !important;
+}
+
+.job-description-child .saiyou-flow-sec{
+	padding: 50px 0;
+}
+
+.job-description-child .saiyou-flow-sec h3{
+	font-size: 24px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin-bottom: 30px;
+	font-feature-settings: "palt";
+}
+
+.job-description-child .saiyou-flow-sec .saiyou-flow{
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.job-description-child .saiyou-flow-sec .saiyou-flow .smb-step__item__number{
+	--_font-size-level: 2;
+	font-weight: 500;
+}
+
+.job-description-child .saiyou-flow-sec .saiyou-flow .smb-step__item__title>.smb-step__item__number{
+	margin-left: calc(var(--smb-step--gap)*-0.75);
+}
+
+.job-description-child .saiyou-flow-sec .saiyou-flow .smb-step__item{
+	margin-left: calc(var(--smb-step--gap) * .75);
+}
+
+.job-description-child .saiyou-flow-sec .saiyou-flow .smb-step__item__title{
+	font-size: 20px;
+	line-height: 1.4;
+	margin-bottom: 10px;
+}
+
+.job-description-child .saiyou-flow-sec .saiyou-flow .smb-step__body>*+*{
+	margin-top: 30px;
+}
+
+
+
+
+/* ENVIRONMENTページ */
+
+.environment .environment-btn-sec,
+.environment .environment-sec{
+	padding: 40px 0;
+}
+
+.environment .environment-sec.career-sec{
+	padding-bottom: 60px;
+}
+
+.environment .environment-btn-sec .smb-buttons.contents-btn{
+	width: 100%;
+	max-width: none;
+	flex-wrap: nowrap;
+	gap: 0;
+}
+
+
+.environment .environment-btn-sec .smb-buttons.contents-btn .smb-btn{
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #fff;
+}
+
+.environment .environment-btn-sec .smb-buttons.contents-btn >.smb-btn-wrapper{
+	flex: 1;
+}
+
+.environment .environment-sec h3{
+	line-height: 1.4;
+	padding: 12px 10px 10px;
+	border-bottom: none;
+	margin-bottom: 15px;
+	font-feature-settings: "palt";
+}
+
+.environment .environment-sec .career-plan-title{
+	font-size: 18px;
+	line-height: 1.4;
+	margin: 40px 0 15px;
+	font-feature-settings: "palt";
+}
+
+.environment .environment-sec .career-plan-img{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.environment .environment-sec .syokudou-conts .menu-box h4{
+	margin-bottom: 10px;
+}
+
+.environment .environment-sec .syokudou-conts .menu-box p{
+	font-weight: 500;
+}
+
+.environment .environment-sec .syokudou-conts .menu-img-block .menu-img:nth-child(n+2){
+	margin-top: 15px !important;
+}
+
+.environment .environment-sec .dish-conts{
+	margin-top: 40px !important;
+}
+
+.environment .environment-sec .dish-conts .c-row{
+	margin-bottom: calc(var(--_gap) * .30 * -1);
+    margin-left: calc(var(--_gap) * .15 * -1);
+    margin-right: calc(var(--_gap) * .15 * -1);
+}
+
+.environment .environment-sec .dish-conts .c-row>.c-row__col {
+    margin-bottom: calc(var(--_gap) * .30);
+    padding-left: calc(var(--_gap) * .15);
+    padding-right: calc(var(--_gap) * .15);
+}
+
+.environment .environment-sec .meeting-img{
+	margin-top: 30px !important;
+	max-width: 500px;
+}
+
+.environment .environment-sec .event-title{
+	font-size: 20px;
+	line-height: 1.4;
+	margin: 40px 0 15px;
+}
+
+.environment .environment-sec .smb-buttons{
+	margin-top: 50px;
+}
+
+
+
+
+/* EMPLOYEE BENEFITSページ */
+
+.employee-benefits .employee-benefits-sec h2{
+	font-size: 22px;
+	line-height: 1.4;
+	padding: 12px 10px 10px;
+	border-left: none;
+	margin: 50px 0 15px !important;
+	font-feature-settings: "palt";
+}
+
+.employee-benefits .employee-benefits-sec .syokudou-conts h3{
+	font-size: 18px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+}
+
+.employee-benefits .employee-benefits-sec .syokudou-conts .menu-img-block .menu-img:nth-child(n+2){
+	margin-top: 15px !important;
+}
+
+.employee-benefits .employee-benefits-sec .dish-conts{
+	margin-top: 40px !important;
+}
+
+.employee-benefits .employee-benefits-sec .dish-conts .c-row{
+	margin-bottom: calc(var(--_gap) * .30 * -1);
+    margin-left: calc(var(--_gap) * .15 * -1);
+    margin-right: calc(var(--_gap) * .15 * -1);
+}
+
+.employee-benefits .employee-benefits-sec .dish-conts .c-row>.c-row__col {
+    margin-bottom: calc(var(--_gap) * .30);
+    padding-left: calc(var(--_gap) * .15);
+    padding-right: calc(var(--_gap) * .15);
+}
+
+.employee-benefits .employee-benefits-sec .counseling-title{
+	font-size: 20px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin: 25px 0;
+}
+
+.employee-benefits .employee-benefits-sec .counseling-img{
+	max-width: 600px;
+	margin: 0 auto 30px !important;
+}
+
+.employee-benefits .employee-benefits-sec .event-title{
+	font-size: 20px;
+	line-height: 1.4;
+	padding: 0;
+	border-bottom: none;
+	margin: 40px 0 15px;
+}
+
+.employee-benefits .employee-benefits-sec .smb-buttons{
+	margin-top: 50px;
+}
+
+
+
+
+/* ENTRYページ */
+
+.entry .tel-box h2{
+	font-size: 22px;
+	margin: 0 0 10px;
+}
+
+.entry .tel-box .tel-num{
+	font-size: 30px;
+	margin: 0 0 15px;
+}
+
+.entry .tel-box .tel-num .icon_tel{
+	font-size: 26px;
+	line-height: 1;
+	color: #00a0e9;
+}
+
+.entry .tel-box .tel-num .tel-time{
+	display: block;
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: -10px;
+}
+
+.entry .tel-box .tyuui{
+	font-size: 14px;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.entry .entry-form{
+	margin-top: 40px;
+}
+
+.entry .entry-form .smf-item__col--label{
+	background: #D3EDFB;
+	padding: 10px 20px;
+}
+
+.entry .entry-form .smf-item__label__text{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.4;
+}
+
+.entry .entry-form .smf-item__label__text .sme-badge{
+	font-size: 12px;
+	padding: 0.2em 0.5em;
+	margin-bottom: 3px;
+	background: #00a0e9 !important;
+}
+
+.entry .entry-form .smf-item__col--controls{
+	padding: 20px;
+}
+
+.entry .entry-form .smf-item__controls>:not(:first-child){
+	margin-top: 10px;
+}
+
+.entry .smf-form--business+.smf-action{
+	margin-bottom: 0;
+}
+
+.entry .thanks-text{
+	border: 1px solid #ddd;
+	padding: 25px 15px;
+}
+
+
+
+/* PRIVACY POLICYページ */
+
+.privacy-policy .privacy-sec h2{
+	font-size: 22px;
+	margin: 35px 0 10px;
+}
+
+.privacy-policy .privacy-sec h2:first-of-type{
+	margin-top: 0;
+}
+
+
+
+
+
+
+
+@media (min-width:640px){
+	
+	.l-header .c-container, .c-fluid-container{
+		padding: 0 25px;
+	}
+
+	.p-header-content--sm {
+		right: 65px;
+	}
+
+	.smb-section .c-container,
+	.l-front-page-widget-area .c-section .c-container,
+	.l-footer .c-container{
+		padding-left: 25px;
+		padding-right: 25px;
+	}
+
+	.l-contents-bottom-widget-area{
+		padding: 30px 25px 25px;
+	}
+
+
+	/* TOPページ */
+
+	.home .top-mv-sec{
+		background-position: center top 300px;
+		background-size: 95.17vw 60.14vw;
+	}
+	
+	.home .top-mv-sec .main-catch{
+		max-width: 650px;
+		margin: 0 auto 44.27vw;
+	}
+
+	.home .top-mv-sec .message-box{
+		max-width: 550px;
+		padding: 30px 25px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.home .top-mv-sec .message-box .message-img{
+		max-width: 300px;
+	}
+
+	.home .top-mv-sec .know-conts .smb-panels__item__body{
+		padding: 20px 15px;
+	}
+
+	.home .environment-bnr{
+		max-width: 450px;
+		margin: 0 auto;
+	}
+
+	.home .job-description-sec .job-bnr-conts .c-row>.c-row__col:last-child{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	/* 固定ページ共通 */
+	
+	.page .page-header{
+		height: 170px;
+	}
+
+	.page .entry-info-sec .lead-text{
+		text-align: center;
+	}
+
+	.page .entry-info-sec .entry-bnr-conts{
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+	/* FAMILYページ */
+
+	.family .faq-sec .faq-block{
+		min-height: 96px;
+	}
+
+	/* MESSAGEページ */
+
+	.message .message-sec .solution-box .solution-img{
+		display: flex;
+		flex-wrap: nowrap;
+	}
+
+	.message .message-sec .solution-box .solution-img figure{
+		width: 48%;
+	}
+
+	.message .message-sec .solution-box .solution-img figure:last-of-type{
+		margin-top: 0 !important;
+	}
+
+
+	/* COMPANYページ */
+
+	.company .company-info-table table th,
+	.company .company-info-table table td{
+		display: table-cell;
+		border-top: 1px solid #ddd !important;
+		padding: 1em !important;
+		width: auto;
+	}
+	
+	.company .company-info-table table th{
+		width: 160px;
+	}
+	
+	.company .company-info-table table tr:last-of-type th{
+		border-bottom: 1px solid #ddd !important;
+	}
+
+
+	/* VISITページ */
+
+	.visit .visit-sec .jirei-conts .c-row>.c-row__col:last-child{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.visit .visit-sec .last-catch{
+		text-align: center;
+	}
+
+
+	/* STAFFページ */
+	
+	.staff .staff-index-sec .lead-text{
+		text-align: center;
+	}
+
+	.staff-child .staff-mv{
+		height: 400px !important;
+	}
+
+	.staff-child .faq-sec figure{
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.staff-child .faq-sec .faq dd .answer-text{
+		padding: 25px;
+	}
+
+
+	/* JOB-DESCRIPTIONページ */
+
+	.job-description-child .job-description-sec .job-description-table table th,
+	.job-description-child .job-description-sec .job-description-table table td{
+		display: table-cell;
+		border-top: 1px solid #ddd !important;
+		padding: 1em !important;
+		text-align: left !important;
+		width: auto;
+	}
+	
+	.job-description-child .job-description-sec .job-description-table table th{
+		width: 150px;
+	}
+	
+	.job-description-child .job-description-sec .job-description-table table tr:last-of-type th{
+		border-bottom: 1px solid #ddd !important;
+	}
+
+
+	/* ENVIRONMENTページ */
+
+	.environment .environment-sec .syokudou-conts .c-row[data-md-columns="2"]{
+		--_item-width: auto !important;
+	}
+
+	.environment .environment-sec .syokudou-conts .c-row>.c-row__col:first-child{
+		width: 67.5%;
+	}
+
+	.environment .environment-sec .syokudou-conts .c-row>.c-row__col:last-child{
+		width: 32.5%;
+	}
+
+
+	/* EMPLOYEE BENEFITSページ */
+
+	.employee-benefits .employee-benefits-sec .syokudou-conts .c-row[data-md-columns="2"]{
+		--_item-width: auto !important;
+	}
+
+	.employee-benefits .employee-benefits-sec .syokudou-conts .c-row>.c-row__col:first-child{
+		width: 67.5%;
+	}
+
+	.employee-benefits .employee-benefits-sec .syokudou-conts .c-row>.c-row__col:last-child{
+		width: 32.5%;
+	}
+
+	
+	/* CONTACTページ */
+	
+	.entry .entry-form .smf-item__col--label{
+		padding: calc(var(--_space)*1);
+		width: 230px;
+		flex: 0 0 auto;
+		max-width: none;
+	}
+	
+	.entry .entry-form .smf-item__col--controls{
+		padding: calc(var(--_space)*1);
+	}
+
+	
+
+
+
+
+	
+
+	
+}
+
+
+
+
+
+
+@media (min-width: 1024px){
+	
+	.pc{
+		display: block !important;
+	}
+	
+	.sp{
+		display: none !important;
+	}
+
+	.l-header{
+		background: none;
+	}
+
+	.l-header__content{
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+
+	.l-header:not(.l-header--left) .c-row{
+		align-items: flex-start;
+	}
+
+	.l-header .c-row>.c-row__col:nth-child(2){
+		max-width: 720px;
+	}
+
+	.l-1row-header__content{
+		padding: 0;
+	}
+
+	.l-header .c-container, .c-fluid-container{
+        padding: 0 40px;
+    }
+
+	.c-site-branding__title {
+		max-width: 170px;
+		margin: 10px 0 0;
+	}
+
+	.c-site-branding__title .custom-logo{
+		max-width: none;
+	}
+
+	[data-has-global-nav=true] .l-2row-header__row:last-child{
+		margin-top: 45px;
+	}
+
+	.p-global-nav{
+		margin-top: 12px;
+	}
+
+	.p-drop-nav .p-global-nav{
+		margin-top: 0;
+	}
+
+	.p-global-nav .c-navbar__item>a{
+		font-size: 16px;
+		font-weight: 500;
+		line-height: 1.4;
+		padding-left: 20px;
+		padding-right: 20px;
+		font-feature-settings: "palt";
+	}
+
+	.l-2row-header .p-global-nav .c-navbar__item>a {
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+
+
+	.l-header .c-row>.c-row__col:first-child{
+		width: 200px;
+	}
+
+	.l-header .c-row>.c-row__col:nth-child(3){
+		width: 240px;
+	}
+
+	.c-header-content .header-btn{
+		width: 100%;
+	}
+	
+	.c-header-content .header-btn .job-description-btn a,
+	.c-header-content .header-btn .entry-btn a{
+		align-items: flex-end;
+		padding: 30px 10px 10px;
+		font-size: 16px;
+	}
+
+
+	.l-front-page-widget-area .c-section{
+		padding: 25px 0;
+	}
+	
+	.l-front-page-widget-area .c-section .c-container{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.l-front-page-widget-area .c-section .c-container .c-row[data-lg-columns="3"]{
+		--_item-width: auto !important;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	.l-front-page-widget-area .c-section .c-container .c-row>.c-row__col:not(:last-child){
+		margin-bottom: var(--_gap);
+	}
+
+	.l-front-page-widget-area .c-section .c-container .footer-company-info .company-logo{
+		max-width: 250px;
+		margin: 0;
+	}
+	
+	.l-front-page-widget-area .c-section .c-container .footer-company-info p{
+		font-size: 16px;
+		text-align: left;
+		margin: 0;
+	}
+	
+	.l-front-page-widget-area .c-section .c-container .footer-company-info .iso-img{
+		max-width: 200px;
+		margin: 0;
+	}
+
+	.l-contents-bottom-widget-area{
+		max-width: 1280px;
+		margin: 0 auto;
+		padding: 25px 40px;
+	}
+	
+	.l-contents-bottom-widget-area .footer-company-info .c-row[data-lg-columns="3"]{
+		--_item-width: auto !important;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.l-contents-bottom-widget-area .footer-company-info .c-row>.c-row__col:not(:last-child){
+		margin-bottom: var(--_gap);
+	}
+	
+	.l-contents-bottom-widget-area .footer-company-info .company-logo{
+		max-width: 250px;
+		margin: 0;
+	}
+	
+	.l-contents-bottom-widget-area .footer-company-info p{
+		font-size: 16px;
+		text-align: left;
+		margin: 0;
+	}
+	
+	.l-contents-bottom-widget-area .footer-company-info .iso-img{
+		max-width: 200px;
+		margin: 0;
+	}
+
+	.l-footer{
+		padding-top: 60px;
+	}
+
+	.l-footer .l-footer-widget-area .c-container{
+		padding: 0 40px;
+	}
+
+	.l-footer .l-footer-widget-area .footer-menu{
+		list-style: none;
+		margin: 0 0 5px;
+		padding: 0 0 40px!important;
+		display: flex !important;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		border-bottom: 1px solid #fff;
+	}
+	
+	.l-footer .l-footer-widget-area .footer-menu li{
+		font-size: 18px;
+		line-height: 1.4;
+		color: #fff;
+		margin: 0;
+		font-feature-settings: "palt";
+	}
+
+	.l-footer .l-footer-widget-area .footer-menu li a{
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.l-footer .l-footer-widget-area .footer-menu li a:hover,
+	.l-footer .l-footer-widget-area .footer-menu li a:active,
+	.l-footer .l-footer-widget-area .footer-menu li a:focus{
+		text-decoration: underline;
+	}
+
+	.l-footer .l-footer-widget-area .footer-menu li ul{
+		margin: 10px 0 0;
+	}
+
+	.l-footer .l-footer-widget-area .footer-menu li ul li{
+		list-style: disc;
+		font-size: 16px;
+		margin: 10px 0 0 !important;
+	}
+
+	.c-sub-nav .c-navbar{
+		gap: 0 40px;
+	}
+	
+	.l-footer--footer-1 .l-footer__footer{
+		padding: 30px 0 20px;
+	}
+	
+	.smb-section .c-container{
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+
+	.page .smb-section{
+		max-width: none;
+		padding: 120px 0;
+	}
+
+	.page .my-breadcrumbs{
+		padding: 15px 0 0;
+	}
+
+	.page .smb-section h2{
+		font-size: 40px;
+		line-height: 1.3;
+		margin: 0 0 40px;
+	}
+	
+	.page .smb-section p{
+		font-size: 16px;
+		line-height: 2.0;
+	}
+
+	.page .smb-section figure{
+		margin-top: 0 !important;
+	}
+
+	
+	/* TOPページ */
+
+	.home .c-site-branding__title {
+		margin: 85px 0 0;
+	}
+
+	.home .c-entry__body{
+		margin-top: 0 !important;
+	}
+
+	.home .smb-section h2{
+		margin-bottom: 70px;
+	}
+
+	.home .top-mv-sec{
+		padding: 0 0 120px;
+		background-position: center top;
+		background-size: 1300px 822px;
+		margin: -45px 0 0 !important;
+	}
+
+	.home .top-mv-sec .c-container{
+		position: relative;
+	}
+
+	.home .top-mv-sec .main-catch{
+		position: absolute;
+		top: -165px;
+		right: 20px;
+		margin: auto;
+		width: calc(100% - 260px);
+		max-width: 976px;
+	}
+
+	.home .top-mv-sec .message-box{
+		background: rgba(255,255,255,0.7);
+		padding: 50px;
+		border: 5px solid #0b318f;
+		margin-top: 570px;
+		max-width: none;
+	}
+
+	.home .top-mv-sec .message-box .c-row[data-lg-columns="2"]{
+		flex-direction: row-reverse;
+		--_item-width: auto !important;
+	}
+
+	.home .top-mv-sec .message-box .c-row>.c-row__col:first-child{
+		width: 38%;
+	}
+
+	.home .top-mv-sec .message-box .c-row>.c-row__col:last-child{
+		width: 62%;
+	}
+	
+	.home .top-mv-sec .message-box .message-img{
+		max-width: none;
+	}
+
+	.home .smb-section h2{
+		font-size: 38px;
+		margin: 0 0 50px;
+	}
+	
+	.home .top-mv-sec .message-box h2{
+		font-size: 36px;
+		margin: 0 0 30px;
+	}
+
+	.home .top-mv-sec .message-box p{
+		font-size: 18px;
+	}
+	
+	.home .top-mv-sec .message-box .smb-buttons{
+		margin-top: 25px;
+	}
+	
+	.home h2.top-sec-title{
+		align-items: center;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.home h2.top-sec-title::before,
+	.home h2.top-sec-title::after {
+	  background-color: #0b318f;
+	  content: "";
+	  height: 2px;
+	  width: 50px;
+	}
+	
+	.home h2.top-sec-title::before {
+	  margin-right: 20px;
+	}
+	
+	.home h2.top-sec-title::after {
+	  margin-left: 20px;
+	}
+	
+	.home .top-mv-sec h2.top-sec-title{
+		margin-top: 140px;
+	}
+
+	.home .top-mv-sec .know-conts .smb-panels__item__body{
+		padding: 35px 25px 25px;
+	}
+
+	.home .top-mv-sec .know-conts h3{
+		font-size: 26px;
+		margin: 30px 0 20px;
+	}
+	
+	.home .top-mv-sec .know-conts p{
+		line-height: 1.8;
+	}
+	
+	.home .staff-sec .staff-conts{
+		margin-top: 60px;
+	}
+	
+	.home .staff-sec .staff-conts .syokusyu{
+		font-size: 16px;
+		padding: 15px;
+	}
+	
+	.home .staff-sec .staff-conts .staff-text{
+		padding: 20px 25px 25px;
+	}
+
+	.home .staff-sec .staff-conts .staff-text p{
+		line-height: 1.8;
+	}
+	
+	.home .staff-sec .staff-conts .staff-text .smb-buttons{
+		margin-top: 20px;
+	}
+
+	.home .staff-sec .staff-conts .staff-text .smb-btn{
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+		max-width: 250px !important;
+	}
+
+	.home .staff-sec .new-employee-block{
+		margin: 80px 0 0;
+	}
+	
+	.home .staff-sec .new-employee-block h3{
+		font-size: 30px;
+		padding: 0 0 15px;
+		margin: 0 0 35px;
+	}
+
+	.home .staff-sec .new-employee-block h3::before{
+		border-bottom: 3px solid #0b318f;
+		width: 60px;
+	}
+	
+	.home .staff-sec .new-employee-block .smb-buttons{
+		gap: 30px !important;
+	}
+
+	.home .environment-bnr{
+		max-width: 900px;
+		margin: 0 auto;
+	}
+	
+	.home .job-description-sec .job-bnr-conts{
+		margin-top: 60px;
+	}
+
+	.home .job-description-sec .job-bnr-conts .c-row{
+		margin-left: calc(var(--_gap) * .85 * -1);
+		margin-right: calc(var(--_gap) * .85 * -1);
+	}
+
+	.home .job-description-sec .job-bnr-conts .c-row>.c-row__col{
+		margin-bottom: calc(var(--_gap) * 1.7);
+		padding-left: calc(var(--_gap) * .85);
+		padding-right: calc(var(--_gap) * .85);
+	}
+	
+	.home .job-description-sec .job-bnr-conts .job-bnr::after{
+		top: -15px;
+		left: -15px;
+		width: 80px;
+		height: 80px;
+	}
+
+	
+
+	
+
+
+	/* 固定ページ共通 */
+
+	.page .l-contents[data-with-sidebar=false] {
+		overflow: visible;
+	}
+
+	.page .c-entry__body{
+		margin-top: -130px;
+	}
+
+	.page .page-header{
+		height: 200px;
+	}
+	
+	.page .page-header .page-title{
+		font-size: 40px;
+	}
+
+	.page .page-header .page-title .sub-title{
+		font-size: 26px;
+		margin-bottom: 10px;
+	}
+	
+
+	.page .smb-section .smb-btn{
+		font-size: 16px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		width: 300px;
+	}
+
+	.page .entry-info-sec{
+		padding: 80px 0;
+	}
+
+	.page .entry-info-sec h2{
+		margin-bottom: 35px;
+	}
+	
+	.page .entry-info-sec .entry-bnr-conts{
+		margin-top: 40px;
+	}
+	
+	.page .entry-info-sec .entry-bnr-conts p{
+		font-size: 20px;
+	}
+	
+	.page .entry-info-sec .entry-bnr-conts .entry-title{
+		font-size: 30px;
+	}
+	
+	.page .entry-info-sec .entry-bnr-conts .entry-title.tel{
+		font-size: 33px;
+	}
+	
+	.page .entry-info-sec .entry-bnr-conts .entry-title.tel .icon_tel{
+		font-size: 26px;
+		margin-right: 3px;
+	}
+
+
+	/* MESSAGEページ */
+
+	.message .message-sec .message-conts .c-row[data-lg-columns="2"]{
+		--_item-width: auto !important;
+	}
+
+	.message .message-sec .message-conts .c-row>.c-row__col:first-child{
+		width: 35%;
+	}
+
+	.message .message-sec .message-conts .c-row>.c-row__col:last-child{
+		width: 65%;
+	}
+
+	.message .message-sec .message-conts .message-img{
+		max-width: none;
+	}
+
+	.message .message-sec .message-conts h2{
+		text-align: left;
+	}
+	
+	.message .message-sec .solution-box{
+		margin-top: 100px;
+	}
+
+	.message .message-sec .solution-box .c-row[data-lg-columns="2"]{
+		--_item-width: auto !important;
+	}
+
+	.message .message-sec .solution-box .c-row>.c-row__col:first-child{
+		width: 70%;
+	}
+
+	.message .message-sec .solution-box .c-row>.c-row__col:last-child{
+		width: 30%;
+	}
+	
+	.message .message-sec .solution-box h3{
+		text-align: left;
+	}
+
+	.message .message-sec .solution-box .solution-img{
+		display: block;
+	}
+
+	.message .message-sec .solution-box .solution-img figure{
+		width: 100%;
+	}
+
+	.message .message-sec .solution-box .solution-img figure:last-of-type{
+		margin-top: 15px !important;
+	}
+	
+	.message .message-sec .smb-buttons{
+		margin-top: 80px;
+	}
+
+
+	/* FAMILYページ */
+
+	.family .faq-sec h2{
+		margin-bottom: 60px;
+	}
+
+	.family .faq-sec .faq-block{
+		min-height: 120px;
+	}
+	
+	.family .faq-sec .faq-block:nth-of-type(n+2){
+		margin-top: 60px;
+	}
+	
+	.family .faq-sec .faq-block .question{
+		font-size: 20px;
+		padding: 5px 0 5px 60px;
+		margin: 0 0 20px !important;
+	}
+	
+	.family .faq-sec .faq-block .question::before{
+		width: 50px;
+		height: 50px;
+	}
+	
+	.family .faq-sec .faq-block .answer{
+		padding: 0 0 0 60px;
+	}
+	
+	.family .faq-sec .faq-block .answer::before{
+		top: 5px;
+		width: 50px;
+		height: 50px;
+	}
+
+	
+	/* COMPANYページ */
+	
+	.company .company-sec .company-vision-title{
+		margin: -240px 0 40px;
+	}
+	
+	.company .company-sec .company-vision-subtitle{
+		font-size: 28px;
+		margin: 0 0 40px;
+	}
+
+	.company .company-sec .company-vision-text p{
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.company .company-sec .company-info-title{
+		margin-top: 140px;
+	}
+	
+	.company .company-info-table table th,
+	.company .company-info-table table td{
+		font-size: 16px;
+	}
+	
+	.company .company-info-table table th{
+		width: 180px;
+	}
+	
+	
+	/* BUSINESSページ */
+	
+	.business .business-sec .business-conts:nth-of-type(n+2){
+		margin-top: 150px;
+	}
+	
+	.business .business-sec .business-conts h2{
+		margin: 0 0 40px;
+	}
+	
+	.business .business-sec .business-conts h3{
+		font-size: 28px;
+		margin: 0 0 40px;
+	}
+
+	.business .business-sec .business-conts .smb-buttons{
+		margin-top: 50px;
+	}
+
+
+	/* VISITページ */
+
+	.visit .visit-sec{
+		padding-bottom: 100px;
+	}
+	
+	.visit .visit-sec::after{
+		bottom: -35px;
+		width: 150px;
+	}
+	
+	.visit .visit-sec h2{
+		font-size: 34px;
+	}
+
+	.visit .visit-sec .lead-text{
+		text-align: center;
+	}
+	
+	.visit .visit-sec h3{
+		font-size: 26px;
+		margin: 80px 0 15px;
+	}
+	
+	.visit .visit-sec .tyuui{
+		font-size: 14px;
+	}
+	
+	.visit .visit-sec .jirei-conts{
+		margin-top: 40px;
+	}
+
+	.visit .visit-sec .jirei-conts h4{
+		font-size: 22px;
+		margin: 25px 0 15px;
+	}
+	
+	.visit .visit-sec .jirei-conts ul li:nth-child(n+2){
+		margin-top: 10px;
+	}
+	
+	.visit .visit-sec .last-catch{
+		font-size: 22px;
+		margin-top: 60px;
+	}
+
+
+	/* STAFFページ */
+	
+	.staff .staff-index-sec .staff-conts{
+		margin-top: 60px;
+	}
+
+	.staff .staff-index-sec .staff-conts .syokusyu{
+		font-size: 16px;
+		padding: 15px;
+	}
+	
+	.staff .staff-index-sec .staff-conts .staff-text{
+		padding: 20px 25px;
+	}
+
+	.staff .staff-index-sec .staff-conts .staff-text p{
+		line-height: 1.8;
+	}
+
+	.staff-child .staff-mv{
+		height: 500px !important;
+	}
+
+	.staff-child .faq-sec figure{
+		max-width: none;
+	}
+
+	.staff-child .faq-sec{
+		padding: 80px 0;
+	}
+
+	.staff-child .faq-sec02 .c-row{
+		flex-direction: row-reverse;
+	}
+	
+	.staff-child .faq-sec .faq dt{
+		font-size: 26px;
+		padding: 10px 0 10px 60px;
+		margin: 0 0 15px;
+	}
+	
+	.staff-child .faq-sec .faq dt::before{
+		width: 50px;
+		height: 50px;
+	}
+	
+	.staff-child .faq-sec .faq dd{
+		padding: 0 0 0 60px;
+	}
+	
+	.staff-child .faq-sec .faq dd::before{
+		width: 50px;
+		height: 50px;
+	}
+	
+	.staff-child .faq-sec .faq dd .answer-text{
+		padding: 30px;
+		border-radius: 6px;
+		line-height: 1.8;
+	}
+	
+	.staff-child .faq-sec .question-text{
+		font-size: 26px;
+		padding: 10px 0 10px 60px;
+		margin: 0 0 15px;
+	}
+	
+	.staff-child .faq-sec .question-text::before{
+		width: 50px;
+		height: 50px;
+	}
+	
+	.staff-child .faq-sec .day-flow-box{
+		margin-top: 15px;
+		padding-top: 40px !important;
+		padding-bottom: 40px !important;
+	}
+	
+	.staff-child .faq-sec .day-flow-box .day-flow{
+		padding-left: 170px;
+	}
+	
+	.staff-child .faq-sec .day-flow-box .day-flow::before{
+		left: 75px;
+		top: 10px;
+	}
+	
+	.staff-child .faq-sec .day-flow-box .day-flow li:nth-child(n+2){
+		margin-top: 40px;
+	}
+	
+	.staff-child .faq-sec .day-flow-box .day-flow li .time{
+		position: absolute;
+		top: -4px;
+		left: -170px;
+		width: 150px;
+		font-size: 20px;
+	}
+	
+	.staff-child .faq-sec .day-flow-box .day-flow li p{
+		line-height: 1.8;
+	}
+	
+	.staff-child .faq-sec .day-flow-box .day-flow li p:nth-of-type(n+2){
+		margin-top: 10px;
+	}
+
+	.staff-child .faq-sec .day-flow-box .case-title{
+		font-size: 24px;
+		margin: 60px 0 25px;
+	}
+
+	.staff-child .staff-sec{
+		padding: 80px 0;
+	}
+	
+	.staff-child .staff-sec h2{
+		font-size: 32px;
+	}
+
+	.staff-child .staff-sec .staff-conts{
+		margin-top: 50px;
+	}
+	
+	.staff-child .staff-sec .staff-conts .syokusyu{
+		font-size: 16px;
+		padding: 15px;
+	}
+	
+	.staff-child .staff-sec .staff-conts .staff-text{
+		padding: 20px 25px 25px;
+	}
+
+	.staff-child .staff-sec .staff-conts .staff-text p{
+		line-height: 1.8;
+	}
+
+	.staff-child .staff-sec .smb-buttons{
+		margin-top: 50px;
+	}
+	
+	.staff-child .staff-sec .staff-conts .staff-text .smb-buttons{
+		margin-top: 20px;
+	}
+
+	.staff-child .staff-sec .staff-conts .staff-text .smb-btn{
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+		max-width: 250px !important;
+	}
+
+	
+
+
+	/* JOB-DESCRIPTIONページ */
+
+	.job-description-child .job-description-sec h2{
+		margin-bottom: 80px;
+	}
+
+	.job-description-child .job-description-sec .job-about-conts h3{
+		font-size: 32px;
+		text-align: left;
+		margin: 0 0 40px;
+	}
+	
+	.job-description-child .job-description-sec .job-about-conts h4{
+		font-size: 24px;
+		text-align: left;
+		margin: 0 0 25px;
+	}
+	
+	.job-description-child .job-description-sec .job-about-conts p:nth-of-type(n+2){
+		margin-top: 25px;
+	}
+	
+	.job-description-child .job-description-sec .person-box{
+		margin-top: 80px;
+	}
+	
+	.job-description-child .job-description-sec .person-box h3{
+		font-size: 32px;
+	}
+	
+	.job-description-child .job-description-sec .person-box .person-block{
+		margin: 50px 0 0;
+	}
+	
+	.job-description-child .job-description-sec .person-box .person-block h4{
+		font-size: 28px;
+		padding: 0 0 0 80px;
+		margin: 0 0 15px;
+	}
+	
+	.job-description-child .job-description-sec .person-box .person-block h4 .text-s{
+		font-size: 20px;
+		margin-top: 5px;
+	}
+	
+	.job-description-child .job-description-sec .person-box .person-block h4::before{
+		left: 65px;
+	}
+	
+	.job-description-child .job-description-sec .person-box .person-block:nth-of-type(1) h4,
+	.job-description-child .job-description-sec .person-box .person-block:nth-of-type(2) h4,
+	.job-description-child .job-description-sec .person-box .person-block:nth-of-type(3) h4{
+		background-size: 55px 55px;
+	}
+	
+	.job-description-child .job-description-sec .job-description-title{
+		font-size: 32px;
+		margin: 100px 0 40px;
+	}
+	
+	.job-description-child .job-description-sec .job-description-table table th,
+	.job-description-child .job-description-sec .job-description-table table td{
+		font-size: 16px;
+		padding: 1em !important;
+	}
+	
+	.job-description-child .job-description-sec .job-description-table table th{
+		width: 160px;
+	}
+
+	.job-description-child .job-description-sec .smb-buttons{
+		margin-top: 50px;
+	}
+	
+	.job-description-child .saiyou-flow-sec{
+		padding: 100px 0;
+	}
+	
+	.job-description-child .saiyou-flow-sec h3{
+		font-size: 32px;
+		margin-bottom: 60px;
+	}
+	
+	.job-description-child .saiyou-flow-sec .saiyou-flow .smb-step__item__title{
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+	
+	.job-description-child .saiyou-flow-sec .saiyou-flow .smb-step__body>*+*{
+		margin-top: 40px;
+	}
+
+	.job-description-child .saiyou-flow-sec .naiteishiki-conts{
+		max-width: 800px;
+	}
+
+
+	/* ENVIRONMENTページ */
+	
+	.environment .environment-btn-sec,
+	.environment .environment-sec{
+		padding: 75px 0;
+	}
+	
+	.environment .environment-sec.career-sec{
+		padding-bottom: 120px;
+	}
+
+	.environment .environment-btn-sec .smb-buttons.contents-btn .smb-btn{
+		padding: 15px;
+	}
+	
+	.environment .environment-sec h3{
+		font-size: 28px;
+		padding: 12px 10px 10px;
+		margin: 60px 0 25px;
+	}
+
+	.environment .environment-sec .training-text,
+	.environment .environment-sec .career-path-text,
+	.environment .environment-sec .employee-benefits-text,
+	.environment .environment-sec .meeting-text,
+	.environment .environment-sec .hoyoujyo-text,
+	.environment .environment-sec .event-text{
+		text-align: center;
+	}
+	
+	.environment .environment-sec .career-plan-title{
+		font-size: 22px;
+		margin: 60px 0 20px;
+	}
+	
+	.environment .environment-sec .career-plan-img{
+		max-width: none;
+	}
+
+	.environment .environment-sec .syokudou-conts .c-row[data-lg-columns="2"]{
+		--_item-width: auto !important;
+	}
+
+	.environment .environment-sec .syokudou-conts .menu-box h4{
+		font-size: 22px;
+		margin-bottom: 10px;
+	}
+
+	.environment .environment-sec .syokudou-conts .menu-box p{
+		font-size: 18px;
+	}
+
+	.environment .environment-sec .dish-conts{
+		margin-top: 50px !important;
+	}
+	
+	.environment .environment-sec .meeting-img{
+		margin-top: 40px !important;
+		max-width: 600px;
+	}
+	
+	.environment .environment-sec .event-title{
+		font-size: 24px;
+		margin: 50px 0 20px;
+	}
+
+	.environment .environment-sec .hoyoujyo-conts,
+	.environment .environment-sec .ekiden-conts,
+	.environment .environment-sec .syoubou-conts,
+	.environment .environment-sec .cake-conts{
+		max-width: 900px;
+	}
+
+	.environment .environment-sec .smb-buttons{
+		margin-top: 80px;
+	}
+
+
+
+
+	/* EMPLOYEE BENEFITSページ */
+	
+	.employee-benefits .employee-benefits-sec h2{
+		font-size: 28px;
+		padding: 12px 10px 10px;
+		margin: 80px 0 25px !important;
+	}
+	
+	.employee-benefits .employee-benefits-sec .syokudou-conts h3{
+		font-size: 22px;
+	}
+	
+	.employee-benefits .employee-benefits-sec .dish-conts{
+		margin-top: 50px !important;
+	}
+	
+	.employee-benefits .employee-benefits-sec .counseling-title{
+		font-size: 24px;
+		margin: 40px 0;
+	}
+
+	.employee-benefits .employee-benefits-sec .counseling-img{
+		margin: 0 auto 40px !important;
+	}
+
+	.employee-benefits .employee-benefits-sec .counseling-text{
+		text-align: center;
+	}
+	
+	.employee-benefits .employee-benefits-sec .event-title{
+		font-size: 24px;
+		margin: 50px 0 20px;
+	}
+
+	.employee-benefits .employee-benefits-sec .employee-benefits-text,
+	.employee-benefits .employee-benefits-sec .event-text{
+		text-align: center;
+	}
+
+	.employee-benefits .employee-benefits-sec .hoyoujyo-conts,
+	.employee-benefits .employee-benefits-sec .ekiden-conts,
+	.employee-benefits .employee-benefits-sec .syoubou-conts,
+	.employee-benefits .employee-benefits-sec .cake-conts{
+		max-width: 900px;
+	}
+
+	.employee-benefits .employee-benefits-sec .smb-buttons{
+		margin-top: 80px;
+	}
+
+
+
+	/* ENTRYページ */
+
+	.entry .tel-box{
+		max-width: 800px;
+		padding-top: 35px !important;
+		padding-bottom: 35px !important;
+	}
+
+	.entry .tel-box h2{
+		font-size: 24px;
+		margin: 0 0 10px;
+	}
+	
+	.entry .tel-box .tel-num{
+		font-size: 40px;
+		margin: 0 0 10px;
+	}
+	
+	.entry .tel-box .tel-num .icon_tel{
+		font-size: 32px;
+	}
+	
+	.entry .tel-box .tel-num .tel-time{
+		display: inline;
+		font-size: 16px;
+		margin-top: 0;
+	}
+	
+	.entry .tel-box .tyuui{
+		text-align: center;
+	}
+	
+	.entry .entry-form{
+		max-width: 800px;
+		margin: 80px auto 0;
+	}
+	
+	.entry .entry-form .smf-item__col--label{
+		width: 260px;
+	}
+	
+	.entry .entry-form .smf-item__label__text .sme-badge{
+		font-size: 14px;
+		padding: 0.2em 0.5em;
+	}
+	
+	.entry .entry-form .smf-item__controls>:not(:first-child){
+		margin-top: 15px;
+	}
+
+	.entry .thanks-text{
+		padding: 50px 40px;
+	}
+
+	.entry .thanks-text p{
+		text-align: center;
+	}
+
+
+	/* PRIVACY POLICYページ */
+	
+	.privacy-policy .privacy-sec h2{
+		font-size: 26px;
+		margin: 60px 0 15px;
+	}
+	
+
+	
+	
+}
+
+
+
+
+
+
